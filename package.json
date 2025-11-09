@@ -1,24 +1,25 @@
 {
   "name": "auth-dashboard-app",
   "version": "1.0.0",
-  "description": "Full-stack EdTech app with modular frontend and backend",
+  "description": "Full-stack EdTech app with modular React frontend and Node backend",
   "main": "index.js",
   "scripts": {
     "client": "npm start --prefix client",
     "server": "npm run dev --prefix server",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "cd client && npm install && npm run build",
-    "predeploy": "npm run predeploy --prefix client",
-    "deploy": "npm run deploy --prefix client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "edtech",
     "react",
+    "node",
+    "express",
     "dashboard",
     "frontend",
     "backend",
-    "auth"
+    "auth",
+    "fullstack"
   ],
   "author": "VAIBHAV",
   "license": "ISC",
