@@ -1,7 +1,20 @@
 {
   "name": "client",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "description": "Frontend client for EdTech platform – built with React, Tailwind CSS, and modern form validation",
+  "homepage": "https://vaibhavharit14.github.io/Frontend-Task",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint \"src/**/*.{js,jsx}\"",
+    "format": "prettier --write \"src/**/*.{js,jsx,json,css,md}\"",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+
+  },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
     "@testing-library/dom": "^10.4.1",
@@ -18,17 +31,23 @@
     "web-vitals": "^2.1.4",
     "yup": "^1.7.1"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint \"src/**/*.{js,jsx}\""
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react": "^7.37.5",
+    "gh-pages": "^6.3.0",
+    "globals": "^16.5.0",
+    "postcss": "^8.5.6",
+    "prettier": "^3.2.4",
+    "tailwindcss": "^3.3.2"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "prettier"
     ]
   },
   "browserslist": {
@@ -42,15 +61,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.39.1",
-    "autoprefixer": "^10.4.21",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-react": "^7.37.5",
-    "globals": "^16.5.0",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^3.3.2"
   }
 }
