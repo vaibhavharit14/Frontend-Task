@@ -1,0 +1,46 @@
+/* Base layout */
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9fafb;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header styling */
+.App-header {
+  background-color: #1f2937;
+  color: #ffffff;
+  padding: 2rem;
+  border-bottom: 1px solid #374151;
+}
+
+/* Logo animation (optional) */
+.App-logo {
+  height: 80px;
+  margin-bottom: 1rem;
+  animation: App-logo-spin 20s linear infinite;
+}
+
+/* Link styling */
+.App-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.App-link:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
